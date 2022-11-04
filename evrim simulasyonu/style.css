@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+canvas {
+    position: absolute;
+    left:50%;
+    top: 50%;
+}
+
+#buttons {
+    z-index: 10;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 80px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+#buttons button {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow .2s;
+}
+#buttons button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
